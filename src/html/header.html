@@ -1,5 +1,26 @@
 <header class="header">
     <div class="header__container container">
-       <h2>Header</h2>
+        <img class="header__icon" src="@img/header_icon.svg" alt="">
+        <ul class="header__list">
+            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Квартиры</a></li>
+            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Новостройки</a></li>
+            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Ипотека</a></li>
+            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Новости новостроек</a></li>
+            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Контакты</a></li>
+        </ul>
+       <button class="header__button" uk-toggle="target: #modal-example">Оставить заявку</button>
+    </div>
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body header__modal">
+            <a class="uk-modal-close header__close-modal">Xuy</a>
+            <div class="header__text-modal">
+                <span>Оставить заявку</span>
+                <span>Мы свяжемся с вами в ближайшее время!</span>
+            </div>
+            <input type="text">
+            <input type="text" placeholder="+7 900 000 00 00">
+            <button class="uk-modal-close uk-button-default header__modal-button">Отправить</button>
+        </div>
+
     </div>
 </header>

@@ -20,5 +20,8 @@
 @import 'config/common';
 
 /** Подключение стилей отдельных блоков и секций */
+@import 'components/container';
 @import 'components/header';
 @import 'components/footer';
+@import 'components/feedback';
+@import 'components/services';
