@@ -1,26 +1,31 @@
 <header class="header">
     <div class="header__container container">
-        <img class="header__icon" src="@img/header_icon.svg" alt="">
+        <a href="/" class="header__logo-wpapper">
+            <img class="header__logo" src="@img/header_icon.svg" alt="">
+        </a>
+        
         <ul class="header__list">
-            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Квартиры</a></li>
-            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Новостройки</a></li>
-            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Ипотека</a></li>
-            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Новости новостроек</a></li>
-            <li class="header__li"><a href="" class="header__link uk-button uk-button-text">Контакты</a></li>
+            <li class="header__item"><a href="" class="header__link uk-button-text">Квартиры</a></li>
+            <li class="header__item"><a href="" class="header__link uk-button-text">Новостройки</a></li>
+            <li class="header__item"><a href="" class="header__link uk-button-text">Ипотека</a></li>    
+            <li class="header__item"><a href="" class="header__link uk-button-text">Новости новостроек</a></li>
+            <li class="header__item"><a href="" class="header__link uk-button-text">Контакты</a></li>
         </ul>
-       <button class="header__button" uk-toggle="target: #modal-example">Оставить заявку</button>
-    </div>
-    <div id="modal-example" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body header__modal">
-            <a class="uk-modal-close header__close-modal">Xuy</a>
-            <div class="header__text-modal">
-                <span>Оставить заявку</span>
-                <span>Мы свяжемся с вами в ближайшее время!</span>
-            </div>
-            <input type="text">
-            <input type="text" placeholder="+7 900 000 00 00">
-            <button class="uk-modal-close uk-button-default header__modal-button">Отправить</button>
-        </div>
-
+       <button class="header__button button" uk-toggle="target: #feedback">Оставить заявку</button>
     </div>
 </header>
+
+<div id="feedback" class="feedback-popup" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body feedback-popup__wrapper">
+        <a class="uk-modal-close feedback-popup__close">Xuy</a>
+        <div class="feedback-popup__info">
+            <span class="feedback-popup__text">Оставить заявку</span>
+            <span class="feedback-popup__text">Мы свяжемся с вами в ближайшее время!</span>
+        </div>
+        <form action="#" class="feedback-popup__form">
+            <input type="text" class="feedback-popup__input">
+            <input type="text" class="feedback-popup__input" placeholder="+7 900 000 00 00">
+            <button class="uk-button-default feedback-popup__button">Отправить</button>
+        </form>
+    </div>
+</div>

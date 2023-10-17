@@ -1,74 +1,35 @@
 .header {
-    
-    &__icon {
+    min-height: 100px;
+    padding: 20px 0;
+
+    &__logo {
         width: 50px;
         height: 50px;
     }
     &__container {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
     &__list {
-        margin: none;
         list-style: none;
         display: flex;
-        flex-direction: row;
         gap: 70px;
+        padding: 0;
     }
 
     &__link {
         color:#000000;
         font-size: 20px;
-        text-transform: capitalize;
+        &:hover {
+            color:#000000;
+            text-decoration: none;
+        }
     }
 
-    &__link:hover {
-        color:#000000;
-        text-decoration: none;
-    }
+    &__item{
 
-    &__button {
-        background-color: #FF6F32;
-        color: #ffffff;
-        border: none;
-        width: 340px;
-        height: 70px;
-        border-radius: 10px;
-        transition: 0.3s;
-        font-size: 20px;
-    }
-    &__button:hover {
-        background-color: #fe824d;
-        color: #ffffff;
-        scale: (1.05);
-        cursor: pointer;
-    
-    }
-    &__li{
-        display: inline-block;
-    }
-
-    height: 128px;
-
-    &__modal{
-        width: 700px;
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 100px;
-    }
-
-    &__text-modal{
-        
-    }
-
-    &__close-modal{
-        align-self: flex-end;
     }
 }
 

@@ -4,6 +4,7 @@
 
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
+    font-family: 'TildaSans', sans-serif;
+    
 }
 
 .main {
@@ -18,7 +21,7 @@ body {
 }
 
 .container {
-    max-width: $laptop;
+    max-width: #{$laptop + 'px'};
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;

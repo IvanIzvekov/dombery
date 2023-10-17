@@ -44,8 +44,9 @@ const scss = () => {
       .pipe(gulp.dest(filePaths.build.css))
       .pipe(plugins.if(isBuild, cleanCss()))
       .pipe(rename({ extname: '.min.css' }))
-      .pipe(gulp.dest(filePaths.build.css))
       .pipe(plugins.browserSync.stream())
+      .pipe(gulp.dest(filePaths.build.css))
+      
   );
 };
 
