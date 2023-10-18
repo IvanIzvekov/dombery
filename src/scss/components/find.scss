@@ -1,0 +1,121 @@
+.find {
+    background-color: #0C73FE;
+    background-image: url(@img/background_house_main.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right;
+    min-height: 700px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    &__header {
+        font-size: 64px;
+        font-weight: 600;
+        margin: 100px 0 20px 0;
+        color: white;
+    }
+
+    &__text {
+        font-size: 20px;
+    }
+
+
+    &__short-request {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 161px;
+        align-self: flex-start;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: underline;
+        &:hover {
+            color: white; 
+        }
+    }
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    //Исправить ширину на адаптивную
+    width: 100%;
+    margin: 66px 0 63px 0;
+    font-size: 20px;
+
+    &__child-wrap {
+        padding: 10px;
+        border-radius: 10px;
+        min-height: 50px;
+    }
+    //во всех input заблокироват ввод
+    &__size {
+        display: flex;
+        flex: 0 3 200px;
+        border: none;
+        border-right: 1px solid lightgray;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-family: inherit;
+        padding-left: 5px;
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__price {
+        display: flex;
+        flex: 0 3 200px;
+        border: none;
+        border-right: 1px solid lightgray;
+        font-family: inherit;
+        padding-left: 5px;
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__square {
+        display: flex;
+        flex: 0 3 100px;
+        border: none;
+        border-right: 1px solid lightgray;
+        font-family: inherit;
+        padding-left: 5px;
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__address {
+        display: flex;
+        flex: 0 4 300px;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-family: inherit;
+        padding-left: 5px;
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__button {
+        padding-left: 20px;
+    }
+
+    &__one-filter {//Решить проблему с input растяжением и добавить перенос текста в основной input
+        outline: none;
+        height: 90%;
+        border-color: lightgray;
+        padding-left: 5px;
+    }
+}
+
+
+

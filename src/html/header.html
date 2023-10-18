@@ -17,15 +17,21 @@
 
 <div id="feedback" class="feedback-popup" uk-modal>
     <div class="uk-modal-dialog uk-modal-body feedback-popup__wrapper">
-        <a class="uk-modal-close feedback-popup__close">Xuy</a>
-        <div class="feedback-popup__info">
-            <span class="feedback-popup__text">Оставить заявку</span>
-            <span class="feedback-popup__text">Мы свяжемся с вами в ближайшее время!</span>
+            <a class="uk-modal-close feedback-popup__close">
+                @@include('helpers/svg.html', {
+                    'icon': 'icon_close',
+                    'class': 'feedback-popup__close-icon'
+                })
+            </a>
+            <div class="feedback-popup__info">
+                <h2 class="feedback-popup__text-header">Оставить заявку</h2>
+                <span class="feedback-popup__text">Мы свяжемся с вами в ближайшее время!</span>
+            </div>
+            <form action="#" class="feedback-popup__form">
+                <input type="text" class="feedback-popup__input" placeholder="Ваше имя">
+                <input type="text" class="feedback-popup__input" placeholder="+7 900 000 00 00">
+                <button class=" uk-modal-close uk-button-default feedback-popup__button button">Отправить</button>
+            </form>
         </div>
-        <form action="#" class="feedback-popup__form">
-            <input type="text" class="feedback-popup__input">
-            <input type="text" class="feedback-popup__input" placeholder="+7 900 000 00 00">
-            <button class="uk-button-default feedback-popup__button">Отправить</button>
-        </form>
     </div>
 </div>

@@ -1,11 +1,10 @@
+
+
 .footer {
     background-color: #0C73FE;
-    height: 480px;
-    color: #ffffff
-}
-
-.footer {
-
+    min-height: 300px;
+    color: white;
+    padding: 90px;
     &__container {
         display: flex;
         flex-direction: row;
@@ -57,12 +56,12 @@
     }
 
     &__link {
-        color:#ffffff;
+        color:white;
+        &:hover {
+            color:white;
+            text-decoration: none;
+        }
     }
 
-    &__link:hover {
-        color:#ffffff;
-        text-decoration: none;
-    }
 }
 

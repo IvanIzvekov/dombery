@@ -7,8 +7,11 @@
         gap: 10px;
     }
 
-    &__title {
+    &__stiky {
         flex: 0 0 350px;
+    }
+
+    &__title {
         font-size: 40px;
         font-weight: 600;
         color: black;
@@ -16,16 +19,19 @@
     
     &__cards {
         display: flex;
-        gap: 20px;
         flex: 0 0 50%;
         flex-direction: column;
+        gap:85px;
     }
+
 
     &__one-card {
         
     }
     
 }
+
+
 
 .service-card {
     border-radius: 10px;
@@ -35,7 +41,9 @@
     position: relative;
 
     &:nth-child(1) {
-
+        & .service-card__image {
+            right: 30px;
+        }
     }
     &:nth-child(2) {
         
@@ -46,6 +54,7 @@
     &:nth-child(4) {
         & .service-card__image {
             bottom: -60px;
+            right: -30px;
         }
     }
 
@@ -78,9 +87,12 @@
         text-transform: capitalize;
         padding: 0;
         &:hover {
-            color: rgb(233, 233, 233);
+            color: white;
         }
+       
     }
+
+    
 
     &__card-text-group {}
 

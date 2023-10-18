@@ -1,8 +1,8 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 .button {
-    background-color: #FF6F32;
-    color: #ffffff;
+    background-color: $dborange;
+    color: white;
     border: none;
     padding: 15px 50px;
     border-radius: 10px;
@@ -11,32 +11,78 @@
     cursor: pointer;
 
     &:hover {
-        background-color: #fe824d;
-        color: #ffffff;
+        background-color: $dborange;
+        color: white;
         transform: scale(1.05);
     }
 }
 
 .feedback-popup {
+
     &__wrapper {
         width: 700px;
         height: 700px;
+        background-image: url(@img/popup_background.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: bottom right;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        padding-bottom: 100px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5)
     }
+
     &__close {
         align-self: flex-end;
     }
-    &__info {}
-    &__text {}
-    &__form {}
-    &__input {}
-    &__button {}
+    &__close-icon {
+        width: 50px;
+        height: 50px;
+    }
+    &__info {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        color: black;
+    }
+    &__text {
+        font-size: 24px;
+    }
+    &__text-header{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    &__form {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+    }
+    &__input {
+        margin-bottom: 30px;
+        width: 577px;
+        height: 90px;
+        border-radius: 10px;
+        border-width: 1px;
+        outline: none;
+        padding-left: 24px;
+    }
+    &__button {
+        margin-top: 20px;
+        height: 90px;
+        background-color: #0C73FE;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        &:hover{
+            transform: scale(1.05);
+            background-color: #2583ff;
+            color:white;
+        }
+    }
 }
 
 .blue-text {
-    color: #0C73FE;
+    color: $dbblue;
 }
