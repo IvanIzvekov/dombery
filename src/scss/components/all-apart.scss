@@ -1,0 +1,84 @@
+.all-apart {
+
+    &__container {
+        margin: 100px auto;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        color: black;
+        padding-bottom: 50px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__filter {
+        border-left-width: 1px;
+        border-color: gray;
+        flex:0 0 340px;
+    }
+}
+
+.filter {
+    color:black;
+    &__price {
+        font-size: 20px;
+        color:black;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__one-filter {
+        height: 44px;
+        width: 80%;
+        outline: none;
+        padding-left: 5px;
+        border-radius: 10px;
+        border-width: 1px;
+    }
+
+    &__square {
+        font-size: 20px;
+        color:black;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__size {
+        font-size: 20px;
+        color:black;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__floors {
+        font-size: 20px;
+        color:black;
+    }
+
+    &__districts {
+        font-size: 20px;
+        color:black;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__district {
+    }
+
+}
+
