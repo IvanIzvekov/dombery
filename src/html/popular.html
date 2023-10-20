@@ -7,12 +7,12 @@
         
         <div uk-slider="finite:true" class="popular__slider">
             <div class="popular__slider-nav">
-                <a href uk-slidenav-previous uk-slider-item="previous"></a>
-                <a href uk-slidenav-next uk-slider-item="next"></a>
+                <a class="popular__slider-nav_prev" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="popular__slider-nav_next" uk-slidenav-next uk-slider-item="next"></a>
             </div>
-            <ul class="uk-slider-items uk-child-width-1-4@s uk-grid-small uk-slider-container-offset">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-grid uk-grid-small">
                 <li>
-                    <div class="popular__card card">
+                    <a href="#" class="popular__card card">
                         <h3 class="card__title">На Никитина</h3>
                         <div  class="card__img-zone">
                             <img class="card__image" src="@img/card_house.png">
@@ -29,8 +29,8 @@
                             <span class="card__num-of-apart">55 квартир</span>
                             <span class="card__min-price">от 3.3 млн ₽</span>
                         </div>
-                        <a href="#" class="card__button button uk-button-default">Подробнее</a>
-                    </div>
+                        <button class="card__button button uk-button-default">Подробнее</button>
+                    </a>
                 </li>
                 <li>
                     <div class="popular__card card">

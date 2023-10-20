@@ -1,3 +1,5 @@
+import FindForm from "./modules/FindForm";
+
 const isMobile = document.documentElement.clientWidth < 768;
 const isTablet = document.documentElement.clientWidth < 1140;
 
@@ -22,5 +24,8 @@ function isWebp() {
 isWebp();
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    
+    const findFormNode = document.querySelector('.find__input-group');
+    if(findFormNode) {
+        new FindForm(findFormNode);
+    }
 })

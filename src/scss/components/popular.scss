@@ -4,7 +4,8 @@
         display: flex;
         flex-direction: column;
         gap:30px;
-        padding: 50px 0;
+        margin: 50px auto;
+        position: relative;
     }
 
     &__title {
@@ -17,40 +18,75 @@
         display: flex;
         justify-content: space-between;
         margin: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        &_prev {
+            border: 1px solid #00000050;
+            padding: 15px;
+            border-radius: 50%;
+            flex: 0 0 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.uk-invisible {
+                visibility: visible !important;
+                opacity: .4;
+                cursor: default;
+            }
+        }
+        &_next {
+            border: 1px solid #00000050;
+            padding: 15px;
+            border-radius: 50%;
+            flex: 0 0 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.uk-invisible {
+                visibility: visible !important;
+                opacity: .4;
+                cursor: default;
+            }
+        }
     }
 
     &__slider {
-        padding: 30px;
     }
 
     &__card {
         border-radius: 10px;
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px;
+        padding: 20px 15px;
         gap: 20px;
-        width: 320px;
     }
 
     &__button {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         background-color: transparent;
-        padding: 15px;
-        border-color: #646464;
+        padding: 20px;
+        border-color: $dbgray;
         border-radius: 10px;
-        color: #646464;
+        color: $dbgray;
         &:hover {
             text-decoration: none;
-            color: #929292;
-            border-color: #929292;
+            color: $dblightgray;
+            border-color: $dblightgray;
         }
     }
 }
 
 .card {
+    transition: .2s;
+    margin-bottom: 10px !important;
     
     &__title {
         font-size: 24px;
@@ -63,11 +99,15 @@
         align-self: center;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
 
     &__image {
-        height: 183px;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        transition: .3s;
     }
 
     &__num-of-apart {
@@ -108,6 +148,14 @@
             text-decoration: none;
             background-color: $dbblue;
             transform: scale(1.02);
+        }
+    }
+
+    &:hover {
+        background-color: #F6F6F6;
+        text-decoration: none;
+        & .card__image {
+            transform: scale(1.05);
         }
     }
 }
