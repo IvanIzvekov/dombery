@@ -7,29 +7,52 @@
             
             <div class="input-group__elem input-group__elem_size" data-href="find-size">Кол-во комнат</div>
             <div class="input-group__child-wrap" uk-dropdown="animation: slide-top; animate-out: true; duration: 200; mode: click;" id="find-size">
-                <input class="input-group__one-filter" placeholder="Кол-во комнат: (1,2),(3)" type="text">
+                <div class="input-group__checkbox">
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>Студия</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>1-к</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>2-к</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>3-к</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>4+</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>Таунхаус</div></label>
+                </div>
             </div>
             <div class="input-group__elem input-group__elem_price" data-href="find-price">Цена</div>
             <div class="input-group__child-wrap" uk-dropdown="animation: slide-top; animate-out: true; duration: 200; mode: click" id="find-price">
                 <div class="uk-inline">
-                    <input class="uk-input input-group__one-filter" placeholder="От:" type="number">
-                    <span class="uk-form-icon uk-form-icon-flip">₽</span>
+                    <input class="uk-input input-group__one-filter" placeholder="от:" type="number">
+                    <span class="uk-form-icon uk-form-icon-flip">т₽</span>
                 </div>
                 <div class="uk-inline">
-                    <input class="uk-input input-group__one-filter" placeholder="До:" type="number">
-                    <span class="uk-form-icon uk-form-icon-flip">₽</span>
+                    <input class="uk-input input-group__one-filter" placeholder="до:" type="number">
+                    <span class="uk-form-icon uk-form-icon-flip">т₽</span>
                 </div>
                 
             </div>
             <div class="input-group__elem input-group__elem_square" data-href="find-square">Общая площадь</div>
             <div class="input-group__child-wrap" uk-dropdown="animation: slide-top; animate-out: true; duration: 200; mode: click" id="find-square">
-                <input class="input-group__one-filter" placeholder="От:" type="text">
-                <input class="input-group__one-filter" placeholder="До:" type="text">
+                <div class="uk-inline">
+                    <input class="uk-input input-group__one-filter" placeholder="от:" type="number">
+                    <span class="uk-form-icon uk-form-icon-flip">м²</span>
+                </div>
+                <div class="uk-inline">
+                    <input class="uk-input input-group__one-filter" placeholder="до:" type="number">
+                    <span class="uk-form-icon uk-form-icon-flip">м²</span>
+                </div>
             </div>
             <div class="input-group__elem input-group__elem_address" data-href="find-address">Район</div>
             <div class="input-group__child-wrap" uk-dropdown="animation: slide-top; animate-out: true; duration: 200; mode: click" id="find-address">
-                <input class="input-group__one-filter" placeholder="От:" type="text">
-                <input class="input-group__one-filter" placeholder="До:" type="text">
+                <div class="input-group__checkbox">
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Дзержинский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Калининский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Кировский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Ленинский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Октябрьский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Первомайский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Советский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Центральный</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Заельцовский</div></label>
+                    <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Железнодорожный</div></label>
+                </div>
             </div>
             <button type="submit" class="input-group__button button">Подобрать квартиру</button>
         </form>

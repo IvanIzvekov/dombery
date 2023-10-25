@@ -1,0 +1,24 @@
+.complex-description {
+    background-color: $complex-description;
+    &__container {
+        
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 600;
+        color: black;
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    &__text {
+        font-size: 24px;
+        color: black;
+        text-align: justify;
+        margin: 0;
+        padding-bottom: 80px;
+    }
+}
+

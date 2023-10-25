@@ -46,6 +46,17 @@
         padding-left: 5px;
         border-radius: 10px;
         border-width: 1px;
+        -moz-appearance: textfield;
+	    -webkit-appearance: textfield;
+	    appearance: textfield;
+
+        &::-webkit-outer-spin-button{
+            display: none;
+        }
+
+        &::-webkit-inner-spin-button{
+            display: none;
+        }
     }
 
     &__square {
@@ -69,16 +80,7 @@
         color:black;
     }
 
-    &__districts {
-        font-size: 20px;
-        color:black;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    &__district {
-    }
+  
 
 }
 

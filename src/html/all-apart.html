@@ -409,76 +409,56 @@
                         <a class="uk-accordion-title" href>Цена</a>
                         <div class="uk-accordion-content filter__price">
                             
-                                <input class="filter__one-filter" placeholder="от" type="text">
-                                <span>₽</span>
+                            <div class="uk-inline">
+                                <input class="uk-input input-group__one-filter" placeholder="от:" type="number">
+                                <span class="uk-form-icon uk-form-icon-flip">т₽</span>
+                            </div>
                             
-                                <input class="filter__one-filter" placeholder="до" type="text">
-                                <span>₽</span>
+                            <div class="uk-inline">
+                                <input class="uk-input input-group__one-filter" placeholder="до:" type="number">
+                                <span class="uk-form-icon uk-form-icon-flip">т₽</span>
+                            </div>
                             
                         </div>
                     </li>
                     <li>
                         <a class="uk-accordion-title" href>Общая площадь</a>
                         <div class="uk-accordion-content filter__square">
-                            <input class="filter__one-filter" placeholder="от" type="text">
-                            <input class="filter__one-filter" placeholder="до" type="text">
+                            <div class="uk-inline">
+                                <input class="uk-input input-group__one-filter" placeholder="от:" type="number">
+                                <span class="uk-form-icon uk-form-icon-flip">м²</span>
+                            </div>
+                            <div class="uk-inline">
+                                <input class="uk-input input-group__one-filter" placeholder="до:" type="number">
+                                <span class="uk-form-icon uk-form-icon-flip">м²</span>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <a class="uk-accordion-title" href>Кол-во комнат</a>
                         <div class="uk-accordion-content filter__size">
-                            <input class="filter__one-filter" placeholder="Кол-во комнат: (1,2),(3)" type="text">
+                            <input class="filter__one-filter" placeholder="Кол-во комнат: (1,2),(3)" type="number">
                         </div>
                     </li>
                     <li>
                         <a class="uk-accordion-title" href>Этажность</a>
                         <div class="uk-accordion-content filter__floors">
-                            <input class="filter__one-filter" placeholder="Этаж:" type="text">
+                            <input class="filter__one-filter" placeholder="Этаж:" type="number">
                         </div>
                     </li>
                     <li>
                         <a class="uk-accordion-title" href>Район</a>
-                        <div class="uk-accordion-content filter__districts">
-                            <div class="filter__district">
-                                <input type="checkbox" name="dzerzhinsky">
-                                <label for="dzerzhinsky">Дзержинский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="kalininsky">
-                                <label for="kalininsky">Калининский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="kirovsky">
-                                <label for="kirovsky">Кировский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="leninsly">
-                                <label for="leninsly">Ленинский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="oktyabrsky">
-                                <label for="oktyabrsky">Октябрьский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="pervomaysky">
-                                <label for="pervomaysky">Первомайский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="sovetsky">
-                                <label for="sovetsky">Советский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="tsentralny">
-                                <label for="tsentralny">Центральный</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="zayeltsovsky">
-                                <label for="zayeltsovsky">Заельцовский</label>
-                            </div>
-                            <div class="filter__district">
-                                <input type="checkbox" name="zheleznodorozhny">
-                                <label for="zheleznodorozhny">Железнодорожный</label>
-                            </div>
+                        <div class="uk-accordion-content input-group__checkbox">
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Дзержинский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Калининский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Кировский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Ленинский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Октябрьский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Первомайский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Советский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Центральный</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Заельцовский</div></label>
+                                <label class="input-group__checkbox-item"><input class="uk-checkbox" name="address" type="checkbox"><div>Железнодорожный</div></label>
                         </div>
                     </li>
                 </ul>

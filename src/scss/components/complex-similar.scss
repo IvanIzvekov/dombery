@@ -1,0 +1,17 @@
+.complex-similar {
+    margin-bottom: 30px;
+    &__container {}
+
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    &__similar {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+

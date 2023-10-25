@@ -91,11 +91,33 @@
         border-radius: 10px;
     }
 
+    &__checkbox {
+        display: block;
+    }
+    &__checkbox-item {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
     &__one-filter {
         outline: none;
         border: 1px solid black;
         border-radius: 6px;
         padding: 10px;
+
+        -moz-appearance: textfield;
+	    -webkit-appearance: textfield;
+	    appearance: textfield;
+
+        &::-webkit-outer-spin-button{
+            display: none;
+        }
+
+        &::-webkit-inner-spin-button{
+            display: none;
+        }
     }
 }
 
