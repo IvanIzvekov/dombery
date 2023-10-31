@@ -411,12 +411,12 @@
                             
                             <div class="uk-inline">
                                 <input class="uk-input input-group__one-filter" placeholder="от:" type="number">
-                                <span class="uk-form-icon uk-form-icon-flip">т₽</span>
+                                <span class="uk-form-icon uk-form-icon-flip">тыс.₽</span>
                             </div>
                             
                             <div class="uk-inline">
                                 <input class="uk-input input-group__one-filter" placeholder="до:" type="number">
-                                <span class="uk-form-icon uk-form-icon-flip">т₽</span>
+                                <span class="uk-form-icon uk-form-icon-flip">тыс.₽</span>
                             </div>
                             
                         </div>
@@ -436,9 +436,14 @@
                     </li>
                     <li>
                         <a class="uk-accordion-title" href>Кол-во комнат</a>
-                        <div class="uk-accordion-content filter__size">
-                            <input class="filter__one-filter" placeholder="Кол-во комнат: (1,2),(3)" type="number">
-                        </div>
+                        <div class="uk-accordion-content input-group__checkbox">
+                            <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>Студия</div></label>
+                            <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>1-к</div></label>
+                            <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>2-к</div></label>
+                            <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>3-к</div></label>
+                            <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>4+</div></label>
+                            <label class="input-group__checkbox-item"><input class="uk-checkbox" name="size" type="checkbox"><div>Таунхаус</div></label>
+                    </div>
                     </li>
                     <li>
                         <a class="uk-accordion-title" href>Этажность</a>
