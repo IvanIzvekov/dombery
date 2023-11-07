@@ -1,4 +1,4 @@
-//import Maps from "./modules/Maps";
+import Maps from "./modules/Maps";
 import FindForm from "./modules/FindForm";
 
 const isMobile = document.documentElement.clientWidth < 768;
@@ -25,12 +25,14 @@ function isWebp() {
 isWebp();
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    var myMap = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 7
-    });
+    
     const findFormNode = document.querySelector('.find__input-group');
     if(findFormNode) {
         new FindForm(findFormNode);
     }
+    const findMap = document.querySelector('.complex-viewer__map');
+    if(findMap) {
+        new Maps();
+    }
 })
+

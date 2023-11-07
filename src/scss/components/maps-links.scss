@@ -1,0 +1,25 @@
+.maps-links {
+
+    &__container {}
+
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        color: black;
+    }
+
+    &__wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 25px;
+    }
+
+    &__map{
+        text-align: center;
+    }
+
+    &__district{
+        font-size: 30px;
+        color: $dbblue;
+    }
+}
