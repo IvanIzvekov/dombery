@@ -191,7 +191,6 @@ class FindFormElem {
                 })
             })
         }
-        console.log(this.inputNode, this.outputNode);
     }
 }
 
